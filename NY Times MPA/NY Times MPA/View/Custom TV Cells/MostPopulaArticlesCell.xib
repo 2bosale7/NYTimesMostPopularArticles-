@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MostPopulaArticlesCell" rowHeight="201" id="KGk-i7-Jjw" customClass="MostPopulaArticlesCell" customModule="NY_Times_MPA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gdw-W7-mdU">
+                        <rect key="frame" x="16" y="70.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="8un-MV-YUZ"/>
+                            <constraint firstAttribute="width" constant="60" id="cOg-35-21H"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ji8-uh-QiU">
+                        <rect key="frame" x="84" y="70.5" width="228" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDJ-p2-CUy">
+                        <rect key="frame" x="84" y="110.5" width="228" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK6-q9-Cat">
+                        <rect key="frame" x="270" y="138.5" width="42" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="suX-Sq-Sif">
+                        <rect key="frame" x="247" y="142" width="15" height="12.5"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="dCj-CQ-2Hq"/>
+                            <constraint firstAttribute="width" constant="15" id="qbf-zm-gKi"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BK6-q9-Cat" firstAttribute="centerY" secondItem="suX-Sq-Sif" secondAttribute="centerY" id="57N-LV-Q1u"/>
+                    <constraint firstItem="ji8-uh-QiU" firstAttribute="leading" secondItem="Gdw-W7-mdU" secondAttribute="trailing" constant="8" id="6qr-U1-iwE"/>
+                    <constraint firstAttribute="trailing" secondItem="ji8-uh-QiU" secondAttribute="trailing" constant="8" id="OXr-sg-Nqv"/>
+                    <constraint firstItem="BK6-q9-Cat" firstAttribute="trailing" secondItem="aDJ-p2-CUy" secondAttribute="trailing" id="Qbw-It-wWd"/>
+                    <constraint firstItem="Gdw-W7-mdU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Z1v-5L-9Xx"/>
+                    <constraint firstItem="BK6-q9-Cat" firstAttribute="leading" secondItem="suX-Sq-Sif" secondAttribute="trailing" constant="8" id="dO9-Ty-k6V"/>
+                    <constraint firstItem="BK6-q9-Cat" firstAttribute="top" secondItem="aDJ-p2-CUy" secondAttribute="bottom" constant="8" id="jBh-6P-oeH"/>
+                    <constraint firstItem="aDJ-p2-CUy" firstAttribute="top" secondItem="Gdw-W7-mdU" secondAttribute="bottom" constant="-20" id="lyq-gZ-Unv"/>
+                    <constraint firstItem="Gdw-W7-mdU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mLB-UR-nFT"/>
+                    <constraint firstAttribute="trailing" secondItem="aDJ-p2-CUy" secondAttribute="trailing" constant="8" id="mPE-5n-pr0"/>
+                    <constraint firstItem="Gdw-W7-mdU" firstAttribute="top" secondItem="ji8-uh-QiU" secondAttribute="bottom" constant="-20" id="sxG-VB-TaU"/>
+                    <constraint firstItem="aDJ-p2-CUy" firstAttribute="leading" secondItem="Gdw-W7-mdU" secondAttribute="trailing" constant="8" id="umb-IK-v4H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="autheres" destination="aDJ-p2-CUy" id="fep-mu-hJQ"/>
+                <outlet property="date" destination="BK6-q9-Cat" id="C5q-AR-3gu"/>
+                <outlet property="img" destination="Gdw-W7-mdU" id="DrS-lL-WFw"/>
+                <outlet property="title" destination="ji8-uh-QiU" id="Nt3-Ik-u9J"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="71.986607142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendar" catalog="system" width="64" height="52"/>
+    </resources>
+</document>
