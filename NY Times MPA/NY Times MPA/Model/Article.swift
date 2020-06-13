@@ -19,6 +19,10 @@ class Article:NSObject {
     var caption:String?
     var copyright:String?
     
+    override init() {
+        
+    }
+    
     init(parametersJson:[String:JSON]) {
         if let title = parametersJson["title"]?.stringValue {
             self.title = title
@@ -55,6 +59,4 @@ class Article:NSObject {
             }
         }
     }
-    
-    
 }
